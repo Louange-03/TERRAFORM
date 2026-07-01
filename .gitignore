@@ -1,0 +1,30 @@
+.DS_Store
+*.swp
+*.swo
+.env
+.env.local
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+# Artefacts de build et de couverture des TP
+dist/
+build/
+coverage/
+.coverage
+*.log
+# Images et volumes Docker locaux generes par les TP
+*.tar
+.docker/
+# Artefacts Terraform locaux et sensibles
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+*.tfvars
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json

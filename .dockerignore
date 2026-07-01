@@ -1,0 +1,12 @@
+node_modules
+npm-debug.log
+.git
+.github
+coverage
+infra
+test
+Dockerfile*
+README.md
+eslint.config.js
+consigne1.md
+consinge.md

@@ -1,0 +1,22 @@
+{
+  "name": "fil-rouge-devops",
+  "version": "1.0.0",
+  "description": "Application fil rouge du cours Introduction au DevOps (HETIC WEB2)",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "eslint": "^9.0.0"
+  }
+}
