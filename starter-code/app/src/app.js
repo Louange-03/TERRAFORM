@@ -1,13 +1,9 @@
 import express from "express";
 
-// Construit l'application Express. On exporte une fabrique (et pas une instance
-// deja demarree) pour pouvoir creer une app neuve dans chaque test, sans port fixe.
 export function createApp() {
   const app = express();
   app.use(express.json());
 
-  // Store en memoire : volontairement simple pour le fil rouge. Une vraie base
-  // arrivera quand on parlera de parite des environnements (jour 3).
   const taches = new Map();
   let prochainId = 1;
 

@@ -8,7 +8,6 @@ let base;
 before(async () => {
   const app = createApp();
   await new Promise((resolve) => {
-    // Port 0 : le systeme choisit un port libre, donc les tests sont isoles.
     server = app.listen(0, () => {
       const { port } = server.address();
       base = `http://127.0.0.1:${port}`;
