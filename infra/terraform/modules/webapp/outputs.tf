@@ -8,3 +8,13 @@ output "urls" {
     "http://localhost:${container.ports[0].external}"
   ]
 }
+
+output "ansible_hosts" {
+  value = {
+    for container in docker_container.app :
+    container.name => {
+      public_url  = "http://localhost:${container.ports[0].external}"
+      public_port = container.ports[0].external
+    }
+  }
+}

@@ -1,3 +1,11 @@
+terraform {
+  required_providers {
+    docker = {
+      source = "kreuzwerker/docker"
+    }
+  }
+}
+
 resource "docker_image" "db" {
   name         = "postgres:16-alpine"
   keep_locally = true

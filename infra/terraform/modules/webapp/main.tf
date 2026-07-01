@@ -1,3 +1,11 @@
+terraform {
+  required_providers {
+    docker = {
+      source = "kreuzwerker/docker"
+    }
+  }
+}
+
 resource "docker_image" "app" {
   name         = var.image
   keep_locally = true
