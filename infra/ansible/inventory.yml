@@ -1,0 +1,24 @@
+"all":
+  "children":
+    "databases":
+      "hosts":
+        "devops-app-db-dev": {}
+    "webservers":
+      "hosts":
+        "devops-app-dev-0":
+          "public_port": 18080
+          "public_url": "http://localhost:18080"
+        "devops-app-dev-1":
+          "public_port": 18081
+          "public_url": "http://localhost:18081"
+        "devops-app-dev-2":
+          "public_port": 18082
+          "public_url": "http://localhost:18082"
+  "vars":
+    "ansible_connection": "docker"
+    "ansible_python_interpreter": "/usr/bin/python3"
+    "app_environment": "dev"
+    "app_log_level": "debug"
+    "app_name": "devops-app"
+    "database_host": "devops-app-db-dev"
+    "database_port": 15432
